@@ -6,14 +6,14 @@ namespace SpellBoundAR.URLUtilities
     [RequireComponent(typeof(Button))]
     public class PlatformSpecificURLOpener : MonoBehaviour
     {
-        [SerializeField] private string androidUrl;
-        [SerializeField] private string iPhoneUrl;
+        public string androidUrl;
+        public string iPhoneUrl;
         [Space]
-        [SerializeField] private string osxEditorUrl;
-        [SerializeField] private string osxPlayerUrl;
+        public string osxEditorUrl;
+        public string osxPlayerUrl;
         [Space]
-        [SerializeField] private string windowsEditorUrl;
-        [SerializeField] private string windowsPlayerUrl;
+        public string windowsEditorUrl;
+        public string windowsPlayerUrl;
 
         [Header("Cache")]
         private Button _button;

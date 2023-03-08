@@ -9,11 +9,11 @@ namespace SpellBoundAR.URLUtilities
     [RequireComponent(typeof(Button))]
     public class NewEmailOpener : MonoBehaviour
     {
-        [SerializeField] private List<string> to;
-        [SerializeField] private List<string> cc;
-        [SerializeField] private List<string> bcc;
-        [SerializeField] private string subject;
-        [SerializeField] [TextArea(4, 10)] private string body;
+        public List<string> to;
+        public List<string> cc;
+        public List<string> bcc;
+        public string subject;
+        [TextArea(4, 10)] public string body;
         
         [Header("Cache")]
         private Button _button;

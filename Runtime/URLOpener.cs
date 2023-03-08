@@ -7,7 +7,7 @@ namespace SpellBoundAR.URLUtilities
     [RequireComponent(typeof(Button))]
     public class URLOpener : MonoBehaviour
     {
-        [SerializeField] private string url;
+        public string url;
         
         [Header("Cache")]
         private Button _button;
