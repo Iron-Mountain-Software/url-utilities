@@ -1,0 +1,21 @@
+{
+  "name": "com.spellboundar.url-utilities",
+  "version": "1.0.0",
+  "displayName": "URL Utilities",
+  "description": "A library for working with URLs.",
+  "unity": "2019.1",
+  "keywords": [
+    "tools"
+  ],
+  "author": "Chris Monteferrante <chris@spellboundar.com>",
+  "type": "tool",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpellBoundAR-Packages/url-utilities.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpellBoundAR-Packages/url-utilities/issues"
+  },
+  "homepage": "https://github.com/SpellBoundAR-Packages/url-utilities#readme"
+}
