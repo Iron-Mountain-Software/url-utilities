@@ -11,10 +11,22 @@ namespace SpellBoundAR.URLUtilities
     {
         [SerializeField] private string url;
         [SerializeField] private Sprite defaultSprite;
+        [SerializeField] private bool applyAspectRatio;
 
         [Header("Cache")]
         private Image _image;
+        private AspectRatioFitter _aspectRatioFitter;
         
+        private AspectRatioFitter AspectRatioFitter 
+        {
+            get
+            {
+                if (!_aspectRatioFitter) _aspectRatioFitter = GetComponent<AspectRatioFitter>();
+                if (!_aspectRatioFitter) _aspectRatioFitter = gameObject.AddComponent<AspectRatioFitter>();
+                return _aspectRatioFitter;
+            }
+        }
+
         public string URL
         {
             get => url;
@@ -76,7 +88,13 @@ namespace SpellBoundAR.URLUtilities
             if (!_image) return; 
             _image.sprite = sprite;
             _image.color = _image.sprite ? Color.white : Color.clear;
-            _image.preserveAspect = true;
+            ApplyAspectRatio();
+        }
+
+        private void ApplyAspectRatio()
+        {
+            if (!applyAspectRatio || !_image.sprite || !_image.sprite.texture) return;
+            AspectRatioFitter.aspectRatio = (float) _image.sprite.texture.width / _image.sprite.texture.height;
         }
     }
 }

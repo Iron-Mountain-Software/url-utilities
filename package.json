@@ -1,6 +1,6 @@
 {
   "name": "com.spellboundar.url-utilities",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "displayName": "URL Utilities",
   "description": "A library for working with URLs.",
   "unity": "2019.1",
