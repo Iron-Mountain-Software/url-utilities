@@ -62,7 +62,7 @@ namespace SpellBoundAR.URLUtilities
         {
             Sprite sprite = null;
 
-            UnityWebRequest webRequest = UnityWebRequestTexture.GetTexture(URL);
+            UnityWebRequest webRequest = UnityWebRequestTexture.GetTexture(url);
             
             yield return webRequest.SendWebRequest();
 
@@ -75,7 +75,9 @@ namespace SpellBoundAR.URLUtilities
                     break;
                 case UnityWebRequest.Result.Success:
                     Texture2D texture = ((DownloadHandlerTexture) webRequest.downloadHandler).texture;
+                    texture.name = url;
                     sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(.5f, .5f));
+                    sprite.name = url;
                     URLImageCache.AddToCache(url, sprite);
                     break;
             }
