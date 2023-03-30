@@ -6,14 +6,50 @@ namespace SpellBoundAR.URLUtilities
     [RequireComponent(typeof(Button))]
     public class PlatformSpecificURLOpener : MonoBehaviour
     {
-        public string androidUrl;
-        public string iPhoneUrl;
+        [SerializeField] private string androidUrl;
+        [SerializeField] private string iPhoneUrl;
         [Space]
-        public string osxEditorUrl;
-        public string osxPlayerUrl;
+        [SerializeField] private string osxEditorUrl;
+        [SerializeField] private string osxPlayerUrl;
         [Space]
-        public string windowsEditorUrl;
-        public string windowsPlayerUrl;
+        [SerializeField] private string windowsEditorUrl;
+        [SerializeField] private string windowsPlayerUrl;
+
+        public string AndroidUrl
+        {
+            get => androidUrl;
+            set => androidUrl = value;
+        }
+        
+        public string IPhoneUrl
+        {
+            get => iPhoneUrl;
+            set => iPhoneUrl = value;
+        }
+        
+        public string OSXEditorUrl
+        {
+            get => osxEditorUrl;
+            set => osxEditorUrl = value;
+        }
+        
+        public string OSXPlayerUrl
+        {
+            get => osxPlayerUrl;
+            set => osxPlayerUrl = value;
+        }
+        
+        public string WindowsEditorUrl
+        {
+            get => windowsEditorUrl;
+            set => windowsEditorUrl = value;
+        }
+        
+        public string WindowsPlayerUrl
+        {
+            get => windowsPlayerUrl;
+            set => windowsPlayerUrl = value;
+        }
 
         [Header("Cache")]
         private Button _button;
@@ -38,22 +74,22 @@ namespace SpellBoundAR.URLUtilities
             switch (Application.platform)
             {
                 case RuntimePlatform.Android:
-                    if (!string.IsNullOrEmpty(androidUrl)) Application.OpenURL(androidUrl);
+                    if (!string.IsNullOrEmpty(AndroidUrl)) Application.OpenURL(AndroidUrl);
                     break;
                 case RuntimePlatform.IPhonePlayer:
-                    if (!string.IsNullOrEmpty(iPhoneUrl)) Application.OpenURL(iPhoneUrl);
+                    if (!string.IsNullOrEmpty(IPhoneUrl)) Application.OpenURL(IPhoneUrl);
                     break;
                 case RuntimePlatform.OSXEditor:
-                    if (!string.IsNullOrEmpty(osxEditorUrl)) Application.OpenURL(osxEditorUrl);
+                    if (!string.IsNullOrEmpty(OSXEditorUrl)) Application.OpenURL(OSXEditorUrl);
                     break;
                 case RuntimePlatform.OSXPlayer:
-                    if (!string.IsNullOrEmpty(osxPlayerUrl)) Application.OpenURL(osxPlayerUrl);
+                    if (!string.IsNullOrEmpty(OSXPlayerUrl)) Application.OpenURL(OSXPlayerUrl);
                     break;
                 case RuntimePlatform.WindowsEditor:
-                    if (!string.IsNullOrEmpty(windowsEditorUrl)) Application.OpenURL(windowsEditorUrl);
+                    if (!string.IsNullOrEmpty(WindowsEditorUrl)) Application.OpenURL(WindowsEditorUrl);
                     break;
                 case RuntimePlatform.WindowsPlayer:
-                    if (!string.IsNullOrEmpty(windowsPlayerUrl)) Application.OpenURL(windowsPlayerUrl);
+                    if (!string.IsNullOrEmpty(WindowsPlayerUrl)) Application.OpenURL(WindowsPlayerUrl);
                     break;
             }
         }
