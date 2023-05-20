@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
-namespace SpellBoundAR.URLUtilities
+namespace IronMountain.URLUtilities
 {
     [DisallowMultipleComponent]
     [RequireComponent(typeof(Image))]

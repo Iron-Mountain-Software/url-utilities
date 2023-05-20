@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SpellBoundAR.URLUtilities
+namespace IronMountain.URLUtilities
 {
     public static class URLImageCache
     {

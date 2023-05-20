@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace SpellBoundAR.URLUtilities
+namespace IronMountain.URLUtilities
 {
     [RequireComponent(typeof(Button))]
     public class PlatformSpecificURLOpener : MonoBehaviour

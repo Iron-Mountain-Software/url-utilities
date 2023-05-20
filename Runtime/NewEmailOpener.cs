@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
-namespace SpellBoundAR.URLUtilities
+namespace IronMountain.URLUtilities
 {
     [RequireComponent(typeof(Button))]
     public class NewEmailOpener : MonoBehaviour

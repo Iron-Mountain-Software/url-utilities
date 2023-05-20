@@ -1,21 +1,21 @@
 {
   "name": "com.iron-mountain.url-utilities",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "displayName": "URL Utilities",
   "description": "A library for working with URLs.",
   "unity": "2019.1",
   "keywords": [
     "tools"
   ],
-  "author": "Chris Monteferrante <chris@spellboundar.com>",
+  "author": "Chris Monteferrante <ludachrismonte@gmail.com>",
   "type": "tool",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SpellBoundAR-Packages/url-utilities.git"
+    "url": "git+https://github.com/Iron-Mountain-Software/url-utilities.git"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SpellBoundAR-Packages/url-utilities/issues"
+    "url": "https://github.com/Iron-Mountain-Software/url-utilities/issues"
   },
-  "homepage": "https://github.com/SpellBoundAR-Packages/url-utilities#readme"
+  "homepage": "https://github.com/Iron-Mountain-Software/url-utilities#readme"
 }
