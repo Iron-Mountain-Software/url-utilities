@@ -1,6 +1,6 @@
 {
   "name": "com.iron-mountain.url-utilities",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "displayName": "URL Utilities",
   "description": "A library for working with URLs.",
   "unity": "2019.1",
