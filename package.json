@@ -1,6 +1,6 @@
 {
   "name": "com.iron-mountain.url-utilities",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "displayName": "URL Utilities",
   "description": "A library for working with URLs.",
   "unity": "2019.1",
@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/Iron-Mountain-Software/url-utilities/issues"
   },
-  "homepage": "https://github.com/Iron-Mountain-Software/url-utilities#readme"
+  "homepage": "https://github.com/Iron-Mountain-Software/url-utilities#readme",
+  "samples": [
+    {
+      "displayName": "Example Scene",
+      "description": "Examples of basic functionality",
+      "path": "Samples~/Example Scene"
+    }
+  ]
 }
