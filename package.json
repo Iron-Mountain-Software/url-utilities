@@ -1,28 +1,43 @@
 {
   "name": "com.iron-mountain.url-utilities",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "displayName": "URL Utilities",
-  "description": "A library for working with URLs.",
-  "unity": "2019.1",
-  "keywords": [
-    "tools"
-  ],
   "author": "Chris Monteferrante <ludachrismonte@gmail.com>",
+  "unity": "2019.1",
   "type": "tool",
+  "license": "MIT",
+  "homepage": "https://github.com/Iron-Mountain-Software/url-utilities#readme",
+  "bugs": {
+    "type": "git",
+    "url": "https://github.com/Iron-Mountain-Software/url-utilities/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Iron-Mountain-Software/url-utilities.git"
   },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Iron-Mountain-Software/url-utilities/issues"
-  },
-  "homepage": "https://github.com/Iron-Mountain-Software/url-utilities#readme",
-  "samples": [
+  "description": "A library for working with URLs.",
+  "useCases": [
+    "Open a URL on button click. (Can be platform specific, i.e. use different a url on iOS/Android)",
+    "Opens a new email with preloaded destination, subject, & body content ",
+    "Loads a remotely hosted texture and assigns it to an Image's sprite. "
+  ],
+  "instructions": [],
+  "keywords": [
+    "tools"
+  ],
+  "sources": [
     {
-      "displayName": "Example Scene",
-      "description": "Examples of basic functionality",
-      "path": "Samples~/Example Scene"
+      "type": "git",
+      "url": "https://github.com/Iron-Mountain-Software/url-utilities"
+    },
+    {
+      "type": "itch.io",
+      "url": "https://iron-mountain.itch.io/url-utilities"
+    },
+    {
+      "type": "npm",
+      "url": "https://www.npmjs.com/package/com.iron-mountain.url-utilities"
     }
-  ]
+  ],
+  "dependencies": {}
 }
